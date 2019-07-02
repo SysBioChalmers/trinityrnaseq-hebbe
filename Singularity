@@ -9,7 +9,7 @@ From: ubuntu:16.04
     wget git curl libdb-dev zlib1g-dev bzip2 libncurses5-dev \
     texlive-latex-base default-jre python-pip python-dev gfortran \
     build-essential libghc-zlib-dev libncurses-dev libbz2-dev liblzma-dev libpcre3-dev libxml2-dev \
-    libblas-dev gfortran git unzip ftp libzmq3-dev nano ftp fort77 libreadline-dev \
+    libblas-dev gfortran unzip libzmq3-dev nano ftp fort77 libreadline-dev \
     libcurl4-openssl-dev libx11-dev libxt-dev \
     x11-common libcairo2-dev libpng-dev libreadline-dev libjpeg-dev pkg-config libtbb-dev \
   && apt-get clean
