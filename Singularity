@@ -1,4 +1,4 @@
-From:trinityrnaseq/trinityrnaseq:2.8.5
+From:trinityrnaseq/trinityrnaseq
 Bootstrap:docker
 
 %labels
