@@ -5,9 +5,9 @@ From: ubuntu:16.04
   MAINTAINER SysBioChalmers
 
 %post
-  apt-get update && apt-get install -y gcc g++ perl python3 automake make \
+  apt-get update && apt-get install -y gcc g++ perl python automake make \
     wget git curl libdb-dev zlib1g-dev bzip2 libncurses5-dev \
-    texlive-latex-base default-jre python3-pip python3-dev gfortran \
+    texlive-latex-base default-jre python-pip python-dev gfortran \
     build-essential libghc-zlib-dev libncurses-dev libbz2-dev liblzma-dev libpcre3-dev libxml2-dev \
     libblas-dev gfortran unzip libzmq3-dev nano ftp fort77 libreadline-dev \
     libcurl4-openssl-dev libx11-dev libxt-dev \
@@ -118,7 +118,7 @@ From: ubuntu:16.04
   ln -s $SRC/Salmon-latest_linux_x86_64/bin/salmon $BIN/.
 
   LD_LIBRARY_PATH=/usr/local/lib
-  pip3 install numpy
+  pip install numpy
   Rscript -e 'source("http://bioconductor.org/biocLite.R");library(BiocInstaller); biocLite("fastcluster", dep = TRUE)'
 
 ## patch the RSEM install... need convert-sam-for-rsem  too!
@@ -133,7 +133,7 @@ From: ubuntu:16.04
   cd ../ && rm -r RSEM-1.3.0
 
 ## MultiQC
-  pip3 install git+https://github.com/ewels/MultiQC.git
+#  pip install git+https://github.com/ewels/MultiQC.git
 
 ## Trinity
   apt-get update && apt-get install -y cmake rsync
