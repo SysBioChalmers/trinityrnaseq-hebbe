@@ -3,6 +3,7 @@ From: ubuntu:16.04
 
 %labels
   MAINTAINER SysBioChalmers
+  VERSION v2.8.5
 
 %post
   apt-get update && apt-get install -y gcc g++ perl python automake make \
