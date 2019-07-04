@@ -133,7 +133,7 @@ From: ubuntu:16.04
   cd ../ && rm -r RSEM-1.3.0
 
 ## MultiQC
-#  pip install git+https://github.com/ewels/MultiQC.git
+  pip install git+https://github.com/ewels/MultiQC.git
 
 ## Trinity
   apt-get update && apt-get install -y cmake rsync
